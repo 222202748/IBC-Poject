@@ -107,6 +107,10 @@ function closeLightbox() {
   const lb = document.getElementById('lightbox');
   if (lb) lb.classList.remove('open');
   document.body.style.overflow = '';
+  
+  // Stop any playing video
+  const imgWrap = document.getElementById('lightboxImgWrap');
+  if (imgWrap) imgWrap.innerHTML = '';
 }
 
 function lightboxNav(dir) {
@@ -120,15 +124,30 @@ function renderLightbox(idx) {
   const capEl = document.getElementById('lightboxCaption');
   if (!item || !imgWrap) return;
 
+  const isVideo = item.getAttribute('data-video') === 'true';
   const imgEl = item.querySelector('img');
   const capP = item.querySelector('.gallery-caption p');
   const catTag = item.querySelector('.gallery-cat-tag');
   
-  if (imgEl) {
+  if (isVideo) {
+    const videoSrc = item.getAttribute('data-src');
+    if (videoSrc) {
+      imgWrap.innerHTML = `
+        <video controls autoplay class="lb-video">
+          <source src="${videoSrc}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>`;
+    } else {
+      imgWrap.innerHTML = `
+        <div class="lb-video-placeholder">
+          <p>Video content up to 500MB</p>
+          <span>(Place your .mp4 video file here)</span>
+        </div>`;
+    }
+  } else if (imgEl) {
     imgWrap.innerHTML = `<img src="${imgEl.src}" alt="Gallery photo">`;
   } else {
-    const icon = item.querySelector('.gallery-placeholder-icon')?.textContent || '📸';
-    imgWrap.innerHTML = `<div class="lb-placeholder">${icon}<span>Add a real photo here</span></div>`;
+    imgWrap.innerHTML = `<div class="lb-placeholder"><span>Add a real photo here</span></div>`;
   }
 
   const catText = catTag ? catTag.textContent : '';

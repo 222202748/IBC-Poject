@@ -207,29 +207,30 @@ const PAGES = {
       <div class="feature-card">
         <div class="feature-image"><img src="js/image/pastor 1.jpeg" alt="Rev. V. Vincent"></div>
         <h3>Rev. V. Vincent </h3>
-        <p>Founder & President. 20 years in pastoral ministry.</p>
-        <p>Lecturer</p>
+        <p><b>Founder & President.</b></p>
+        <p>20 years in pastoral ministry.</p>
+        <p>Tutor</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-image"><img src="js/image/pastor2.jpeg" alt="Rev. V. Vincent"></div>
-        <h3>J. Sbastin Rajasehar</h3>
+        <div class="feature-image"><img src="js/image/pastor2.jpeg" alt="J. Sbastin Rajasehar"></div>
+        <h3>J. Sebastin Rajasehar</h3>
         <p>Bsc BED - M.DIV. Specialises in Ministry & Theology.</p>
-        <p>Lecturer</p>
+        <p>Tutor</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-image"><img src="js/image/pastor 1.jpeg" alt="Rev. V. Vincent"></div>
-        <h3>Rev. V. Vincent </h3>
-        <p>Founder & President. 20 years in pastoral ministry.</p>
-        <p>Lecturer</p>
+        <div class="feature-image"><img src="js/image/lecturer 3.jpeg" alt="Patricia Pauline k"></div>
+        <h3> Mrs. K. Patricia Pauline  </h3>
+        <p>M.E.,</p>
+        <p>Tutor</p>
       </div>
 
        <div class="feature-card">
-        <div class="feature-image"><img src="js/image/pastor 1.jpeg" alt="Rev. V. Vincent"></div>
-        <h3>Rev. V. Vincent </h3>
-        <p>Founder & President. 20 years in pastoral ministry.</p>
-        <p>Lecturer</p>
+        <div class="feature-image"><img src="js/image/lecturer4.jpeg" alt="John V"></div>
+        <h3>Rev. John V  </h3>
+        <p>Theology Teacher.,</p>
+        <p>Tutor</p>
       </div>
      
     </div>
@@ -405,170 +406,147 @@ const PAGES = {
         <button class="filter-btn active" onclick="filterGallery('all', this)">All Photos</button>
         <button class="filter-btn" onclick="filterGallery('ceremony', this)">Ceremony</button>
         <button class="filter-btn" onclick="filterGallery('graduates', this)">Graduates</button>
-        <button class="filter-btn" onclick="filterGallery('faculty', this)">Faculty</button>
-        <button class="filter-btn" onclick="filterGallery('campus', this)">Campus</button>
+
       </div>
     </div>
 
     <!-- Gallery Grid -->
     <div class="gallery-grid" id="galleryGrid">
 
-      <!-- Placeholder cards — client replaces with real photos -->
+      <!-- 9 Image Placeholders -->
       <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
-        <div class="gallery-img ceremony">
-          <div class="gallery-placeholder-icon">🎓</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/1.jpeg" alt="Accreditation Certificate">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Ceremony</span>
-          <p>Opening Prayer &amp; Worship — Rev. V. Vincent leading the congregation</p>
+          <span class="gallery-cat-tag">Accreditation</span>
+          <p>NATA Accreditation Certificate - India Bible College</p>
         </div>
       </div>
 
-      <div class="gallery-item gallery-wide" data-category="ceremony" onclick="openLightbox(this)">
-        <div class="gallery-img ceremony-wide">
-          <div class="gallery-placeholder-icon">✝</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/2.jpeg" alt="Affiliation Certificate">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Ceremony</span>
-          <p>Class of 2026 — Full graduating batch on the IBC main stage</p>
+          <span class="gallery-cat-tag">Affiliation</span>
+          <p>Dayspring Theological University Affiliation Certificate</p>
         </div>
       </div>
 
-      <div class="gallery-item" data-category="graduates" onclick="openLightbox(this)">
-        <div class="gallery-img graduates">
-          <div class="gallery-placeholder-icon">📜</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/3.jpeg" alt="Membership Certificate">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Graduates</span>
-          <p>B.Th. graduates receiving their degree scrolls with joy and thanksgiving</p>
+          <span class="gallery-cat-tag">Membership</span>
+          <p>NATA Membership Certificate - India Bible College</p>
         </div>
       </div>
 
       <div class="gallery-item" data-category="graduates" onclick="openLightbox(this)">
         <div class="gallery-img graduates2">
-          <div class="gallery-placeholder-icon">🙏</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+        <img class="gallery-img-real" src="js/image/WhatsApp Image 2026-04-09 at 3.47.19 PM.jpeg" alt="place">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Graduates</span>
-          <p>Prayer of commissioning &mdash; faculty laying hands on graduates</p>
+          <span class="gallery-cat-tag">Place of College</span>
+          <p>Commissioning & Graduation Ceremony Photo 4</p>
         </div>
       </div>
 
       <div class="gallery-item" data-category="faculty" onclick="openLightbox(this)">
         <div class="gallery-img faculty">
-          <div class="gallery-placeholder-icon">👨‍🏫</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+         <img class="gallery-img-real" src="js/image/12.jpeg" alt="chairman">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Faculty</span>
-          <p>The IBC faculty team gathered for the Class of 2026 graduation</p>
+          <span class="gallery-cat-tag">1st Graduation</span>
+          <p>Commissioning & Graduation Ceremony Photo 5</p>
         </div>
       </div>
 
-      <div class="gallery-item gallery-tall" data-category="ceremony" onclick="openLightbox(this)">
-        <div class="gallery-img ceremony-tall">
-          <div class="gallery-placeholder-icon">🕊️</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+      <div class="gallery-item" data-category="faculty" onclick="openLightbox(this)">
+        <div class="gallery-img faculty">
+         <img class="gallery-img-real" src="js/image/chairman.jpeg" alt="chairman">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Ceremony</span>
-          <p>Keynote address by guest speaker on the call to serve the unreached</p>
+          <span class="gallery-cat-tag">1st Graduation</span>
+          <p>Commissioning & Graduation Ceremony Photo 5</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+        <div class="gallery-img ceremony-tall">
+        <img class="gallery-img-real" src="js/image/13.jpeg" alt="graduation ceremony">
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-cat-tag">1st Graduation Ceremony</span>
+          <p>Commissioning & Graduation Ceremony Photo </p>
         </div>
       </div>
 
       <div class="gallery-item" data-category="campus" onclick="openLightbox(this)">
         <div class="gallery-img campus">
-          <div class="gallery-placeholder-icon">🌿</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+         <img class="gallery-img-real" src="js/image/9.jpeg" alt="chairman">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Campus</span>
-          <p>IBC campus beautifully decorated for the graduation celebration</p>
+          <span class="gallery-cat-tag">2nd 
+          Graduation Ceremony </span>
+          <p>Commissioning & Graduation Ceremony Photo 7</p>
         </div>
       </div>
 
       <div class="gallery-item" data-category="graduates" onclick="openLightbox(this)">
         <div class="gallery-img graduates3">
-          <div class="gallery-placeholder-icon">🌏</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+         <img class="gallery-img-real" src="js/image/7.jpeg" alt="chairman">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Graduates</span>
-          <p>M.Div. graduates ready to be sent out to serve in ministry across India</p>
+       
+          <span class="gallery-cat-tag">3nd Graduation Ceremony</span>
+          <p>Commissioning & Graduation Ceremony Photo 8</p>
         </div>
       </div>
 
       <div class="gallery-item" data-category="campus" onclick="openLightbox(this)">
         <div class="gallery-img campus2">
-          <div class="gallery-placeholder-icon">📖</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+         <img class="gallery-img-real" src="js/image/14.jpeg" alt="chairman">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Campus</span>
-          <p>Chapel hall arranged for the graduation service &mdash; IBC auditorium</p>
+          <span class="gallery-cat-tag">Image 9</span>
+          <p>Commissioning & Graduation Ceremony Photo 9</p>
         </div>
       </div>
 
-      <div class="gallery-item" data-category="faculty" onclick="openLightbox(this)">
-        <div class="gallery-img faculty2">
-          <div class="gallery-placeholder-icon">✨</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+      <!-- 2 Video Placeholders -->
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)" data-video="true" data-src="js/vedios/vedio1.mp4">
+        <div class="gallery-img ceremony">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Faculty</span>
-          <p>Principal Rev. V. Vincent addressing the graduating class</p>
+          <span class="gallery-cat-tag">Video 1</span>
+          <p>Graduation Ceremony Highlights Video 1</p>
         </div>
       </div>
 
-      <div class="gallery-item gallery-wide" data-category="graduates" onclick="openLightbox(this)">
-        <div class="gallery-img graduates-wide">
-          <div class="gallery-placeholder-icon">🎊</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)" data-video="true" data-src="js/vedios/vedio2.mp4">
+        <div class="gallery-img ceremony">
+          <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Graduates</span>
-          <p>Joyful celebrations after the commissioning service &mdash; God is faithful!</p>
+          <span class="gallery-cat-tag">Video 2</span>
+          <p>Graduation Ceremony Highlights Video 2</p>
         </div>
       </div>
 
-      <div class="gallery-item" data-category="campus" onclick="openLightbox(this)">
-        <div class="gallery-img campus3">
-          <div class="gallery-placeholder-icon">🌸</div>
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-icon">🔍</div>
-          </div>
-        </div>
-        <div class="gallery-caption">
-          <span class="gallery-cat-tag">Campus</span>
-          <p>Families and friends gathered on the IBC campus grounds for the celebrations</p>
-        </div>
-      </div>
 
     </div><!-- /gallery-grid -->
 
