@@ -4,40 +4,35 @@
 
 ```
 ibc-website/
-├── index.html          ← Main entry point (open this in browser)
+├── index.html          ← Main entry point
 ├── css/
-│   └── style.css       ← All styles, colors, responsive layout
+│   └── style.css       ← Modern masonry layout, full-screen gallery, responsive styles
 ├── js/
-│   ├── components.js   ← Topbar, Navigation, Mobile Menu, Footer
-│   ├── pages.js        ← All 6 page HTML content
-│   └── main.js         ← Navigation logic & form handling
+│   ├── components.js   ← Global components: Nav, Mobile Menu, Footer
+│   ├── pages.js        ← Content for all 6 pages (Home, About, Courses, Contact, Gallery)
+│   └── main.js         ← Routing logic, Lightbox, Form handling (WhatsApp redirect)
 └── README.md
 ```
 
-## Pages Included
-1. **Home** — Hero, Why IBC, Programme preview, Alumni testimonies
-2. **About Us** — History, Vision, Faculty profiles
-3. **Programmes** — 6 theological courses with details
-4. **Events** — 6 upcoming campus events
-5. **Admission** — 4-step process + full application form
-6. **Contact** — Contact info + enquiry/prayer request form
+## Features
+1. **Dynamic Navigation** — Single-page application (SPA) style routing using URL hashes.
+2. **Modern Masonry Gallery** — Beautifully organized certificates and photos with varying card heights.
+3. **Full-Screen Media** — Immersive view for images and graduation videos with glass-morphism controls.
+4. **WhatsApp Integration** — Contact form automatically redirects to WhatsApp with a pre-filled message.
+5. **Interactive Video** — Muted video previews on hover within the gallery grid.
 
-## How to Use
-1. Open `index.html` in any modern browser — no server needed
-2. Click nav links to switch between pages
-3. Forms show a success message on submission (demo mode)
+## Pages
+- **Home** — Hero banner, verse ticker, admission CTA, alumni testimonials.
+- **About Us** — Vision, mission, and detailed faculty profiles with circular portraits.
+- **Programmes** — Detailed course descriptions for C.Th, D.Th, B.Th, and M.Div.
+- **Gallery** — Academic accreditations and ceremony highlights in a premium masonry grid.
+- **Contact** — Office info and interactive enquiry form.
 
-## Customisation
-- **Colors**: Edit `:root` variables at the top of `css/style.css`
-- **Content**: Update text in `js/pages.js`
-- **Logo/Name**: Update in `js/components.js`
-- **Add real form backend**: Replace `submitForm()` in `js/main.js` with your API call
+## Accreditation & Recognition
+- Affiliated with **Dayspring Theological University**, Texas, USA.
+- Accredited by **NATA**, India.
 
-## Accreditation
-Senate of Serampore Affiliated · ACTEA Accredited · EFI Member
-
-## Design
-- Maroon & Gold colour scheme
-- Cormorant Garamond (headings) + Lato (body)
-- Fully mobile responsive
-- Cross motif throughout
+## Design Identity
+- **Brand Colors**: Deep Maroon (#4a0e0e) and Gold (#c8973a).
+- **Typography**: Cormorant Garamond (Classical Headings) + Lato (Clean Body Text).
+- **Experience**: Immersive, spiritual, and professional.

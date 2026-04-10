@@ -5,7 +5,7 @@
 // ── TOP BAR ──
 document.getElementById('topbar-placeholder').innerHTML = `
 <div class="topbar">
-  <span>📞 +91 78456 06488&nbsp;|&nbsp; ✉️ <a href="mailto: indiaiblecollege2024@gmail.com">indiaiblecollege2024@gmail.com</a></span>
+  <span>📞 +91 78456 06488&nbsp;|&nbsp; ✉️ <a href="mailto:indiabiblecollege2024@gmail.com">indiabiblecollege2024@gmail.com</a></span>
 </div>`;
 
 // ── NAVIGATION ──
@@ -50,9 +50,9 @@ document.getElementById('footer-placeholder').innerHTML = `
         <img src="js/icons/WhatsApp_Image_2026-02-25_at_1.26.35_PM-removebg-preview.ico" alt="IBC Logo" style="height: 50px;">
         <div>India <span>Bible</span> College</div>
       </div>
-      <div class="footer-sub"> Est. 2024 · No. 173/2-B, Roja Thotta, Kadeshanagar,Irumbuliyur,Chennai, Tamil Nadu,India</div>
+      <div class="footer-sub">Est. 2024 · No. 173/2-B, Roja Thottam, Kadeshanagar, Irumbuliyur, Chennai, Tamil Nadu, India</div>
       <p>Raising faithful servants of God for over 2 years. Rooted in Scripture. Called to serve. Sent to the nations.</p>
-      <div class="footer-verse">He is the one we proclaim, admonishing and teaching everyone with all wisdom, so that we may present everyone fully mature in Christ. — Colossians - 1 : 28</div>
+      <div class="footer-verse">"He is the one we proclaim, admonishing and teaching everyone with all wisdom, so that we may present everyone fully mature in Christ." — Colossians 1:28</div>
     </div>
     <div class="footer-col">
       <h4>Quick Links</h4>

@@ -215,7 +215,7 @@ const PAGES = {
       <div class="feature-card">
         <div class="feature-image"><img src="js/image/pastor2.jpeg" alt="J. Sbastin Rajasehar"></div>
         <h3>J. Sebastin Rajasehar</h3>
-        <p>Bsc BED - M.DIV. Specialises in Ministry & Theology.</p>
+        <p>B.Sc., B.Ed. - M.Div. Specialist in Ministry Theology.</p>
         <p>Tutor</p>
       </div>
 
@@ -256,8 +256,8 @@ const PAGES = {
         <div class="course-body">
           <div class="course-tag">Theology</div>
           <h3>Certificate in Theology (C.Th)</h3>
-          <p>A foundational 6 Months programme for lay leaders and those starting their ministry journey.</p>
-          <p> 25 class each and classes has One and half hours</p>
+          <p>A foundational 6-month programme for lay leaders and those starting their ministry journey.</p>
+          <p>25 sessions, each 1.5 hours.</p>
           <div class="course-meta"><span>⏱ 6 Months</span><span>📚 Residential</span><span>🎓 Certificate</span></div>
           <button class="btn-primary" style="width:100%;margin-top:1.5rem;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfP92Rwlg3dZLcy_mJ5zDNDnOsGs8U6LGr_KCuuNkY7w19FYw/viewform?usp=header', '_blank')">Apply Now</button>
         </div>
@@ -269,9 +269,9 @@ const PAGES = {
         <div class="course-body">
           <div class="course-tag">Theology</div>
           <h3>Diploma in Theology (D.Th)</h3>
-          <p>One-year, intensive programme focusing on biblical studies, ministry skills .</p>
-          <p> 50 class each and classes has One and half hours</p>>
-          <div class="course-meta"><span>⏱ 1 Years</span><span>📚 Residential</span><span>🎓 Diploma</span></div>
+          <p>One-year, intensive programme focusing on biblical studies and ministry skills.</p>
+          <p>50 sessions, each 1.5 hours.</p>
+          <div class="course-meta"><span>⏱ 1 Year</span><span>📚 Residential</span><span>🎓 Diploma</span></div>
           <button class="btn-primary" style="width:100%;margin-top:1.5rem;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfP92Rwlg3dZLcy_mJ5zDNDnOsGs8U6LGr_KCuuNkY7w19FYw/viewform?usp=header', '_blank')">Apply Now</button>
         </div>
       </div>
@@ -283,7 +283,7 @@ const PAGES = {
           <div class="course-tag">Theology</div>
           <h3>Bachelor of Theology (B.Th)</h3>
           <p>Our flagship three-year undergraduate programme for aspiring pastors and missionaries.</p>
-          <p>150 class and each classes has One and half hours</p>
+          <p>150 sessions, each 1.5 hours.</p>
           <div class="course-meta"><span>⏱ 3 Years</span><span>📚 Residential</span><span>🎓 Degree</span></div>
           <button class="btn-primary" style="width:100%;margin-top:1.5rem;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfP92Rwlg3dZLcy_mJ5zDNDnOsGs8U6LGr_KCuuNkY7w19FYw/viewform?usp=header', '_blank')">Apply Now</button>
         </div>
@@ -296,7 +296,7 @@ const PAGES = {
           <div class="course-tag">Theology</div>
           <h3>Master of Divinity (M.Div)</h3>
           <p>Postgraduate level training for those with a prior degree seeking advanced theological education.</p>
-          <p>100 class and each classes Two hours</p>
+          <p>100 sessions, each 2 hours.</p>
           <div class="course-meta"><span>⏱ 2 Years</span><span>📚 Residential</span><span>🎓 Masters</span></div>
           <button class="btn-primary" style="width:100%;margin-top:1.5rem;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfP92Rwlg3dZLcy_mJ5zDNDnOsGs8U6LGr_KCuuNkY7w19FYw/viewform?usp=header', '_blank')">Apply Now</button>
         </div>
@@ -389,34 +389,31 @@ const PAGES = {
 `,
   gallery: `
   <div class="page-hero">
-    <h1>Photo Gallery</h1>
+    <h1>Gallery & Recognition</h1>
     <p>&ldquo;To everything there is a season&hellip; a time to every purpose under the heaven.&rdquo; &mdash; Ecclesiastes 3:1</p>
   </div>
 
   <section class="section section-alt">
 
-    <!-- Gallery Header -->
     <div class="gallery-header">
-      <div class="section-label">Graduation Photos</div>
-      <h2 class="section-title">All Last Class &mdash; Commissioning &amp; Graduation Ceremony</h2>
-      <p class="section-subtitle">A blessed day of celebration as we commission our graduates to go forth and serve the Lord across India and the nations. &ldquo;Well done, good and faithful servant.&rdquo; &mdash; Matthew 25:21</p>
+      <div class="section-label">Certificates & Celebrations</div>
+      <h2 class="section-title">Academic Excellence & Spiritual Milestones</h2>
+      <p class="section-subtitle">A collection of our official accreditations and highlights from our graduation ceremonies, celebrating the faithfulness of God in our ministry.</p>
 
-      <!-- Filter Tabs -->
       <div class="gallery-filters">
-        <button class="filter-btn active" onclick="filterGallery('all', this)">All Photos</button>
+        <button class="filter-btn active" onclick="filterGallery('all', this)">All Media</button>
+        <button class="filter-btn" onclick="filterGallery('accreditation', this)">Accreditation</button>
         <button class="filter-btn" onclick="filterGallery('ceremony', this)">Ceremony</button>
-        <button class="filter-btn" onclick="filterGallery('graduates', this)">Graduates</button>
-
+        <button class="filter-btn" onclick="filterGallery('campus', this)">Campus</button>
       </div>
     </div>
 
-    <!-- Gallery Grid -->
     <div class="gallery-grid" id="galleryGrid">
 
-      <!-- 9 Image Placeholders -->
-      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+      <!-- Accreditation Certificates -->
+      <div class="gallery-item" data-category="accreditation" onclick="openLightbox(this)">
         <div class="gallery-img">
-          <img class="gallery-img-real" src="js/image/1.jpeg" alt="Accreditation Certificate">
+          <img class="gallery-img-real" src="js/image/1.jpeg" alt="NATA Accreditation Certificate">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
@@ -425,9 +422,9 @@ const PAGES = {
         </div>
       </div>
 
-      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+      <div class="gallery-item" data-category="accreditation" onclick="openLightbox(this)">
         <div class="gallery-img">
-          <img class="gallery-img-real" src="js/image/2.jpeg" alt="Affiliation Certificate">
+          <img class="gallery-img-real" src="js/image/2.jpeg" alt="DTU Affiliation Certificate">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
@@ -436,9 +433,9 @@ const PAGES = {
         </div>
       </div>
 
-      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+      <div class="gallery-item" data-category="accreditation" onclick="openLightbox(this)">
         <div class="gallery-img">
-          <img class="gallery-img-real" src="js/image/3.jpeg" alt="Membership Certificate">
+          <img class="gallery-img-real" src="js/image/3.jpeg" alt="NATA Membership Certificate">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
@@ -447,108 +444,113 @@ const PAGES = {
         </div>
       </div>
 
-      <div class="gallery-item" data-category="graduates" onclick="openLightbox(this)">
-        <div class="gallery-img graduates2">
-        <img class="gallery-img-real" src="js/image/WhatsApp Image 2026-04-09 at 3.47.19 PM.jpeg" alt="place">
+      <!-- Campus & Places -->
+      <div class="gallery-item" data-category="campus" onclick="openLightbox(this)">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/WhatsApp Image 2026-04-09 at 3.47.19 PM.jpeg" alt="College Campus">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Place of College</span>
-          <p>Commissioning & Graduation Ceremony Photo 4</p>
+          <span class="gallery-cat-tag">Campus</span>
+          <p>The India Bible College Campus Grounds</p>
         </div>
       </div>
 
-      <div class="gallery-item" data-category="faculty" onclick="openLightbox(this)">
-        <div class="gallery-img faculty">
-         <img class="gallery-img-real" src="js/image/12.jpeg" alt="chairman">
+      <!-- Graduation Photos -->
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/12.jpeg" alt="1st Graduation">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">1st Graduation</span>
-          <p>Commissioning & Graduation Ceremony Photo 5</p>
-        </div>
-      </div>
-
-      <div class="gallery-item" data-category="faculty" onclick="openLightbox(this)">
-        <div class="gallery-img faculty">
-         <img class="gallery-img-real" src="js/image/chairman.jpeg" alt="chairman">
-          <div class="gallery-overlay"></div>
-        </div>
-        <div class="gallery-caption">
-          <span class="gallery-cat-tag">1st Graduation</span>
-          <p>Commissioning & Graduation Ceremony Photo 5</p>
+          <span class="gallery-cat-tag">Ceremony</span>
+          <p>Highlights from our 1st Graduation Ceremony</p>
         </div>
       </div>
 
       <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
-        <div class="gallery-img ceremony-tall">
-        <img class="gallery-img-real" src="js/image/13.jpeg" alt="graduation ceremony">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/chairman.jpeg" alt="Chairman addressing the assembly">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">1st Graduation Ceremony</span>
-          <p>Commissioning & Graduation Ceremony Photo </p>
+          <span class="gallery-cat-tag">Ceremony</span>
+          <p>Our Honorable Chairman addressing the assembly</p>
         </div>
       </div>
 
-      <div class="gallery-item" data-category="campus" onclick="openLightbox(this)">
-        <div class="gallery-img campus">
-         <img class="gallery-img-real" src="js/image/9.jpeg" alt="chairman">
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/13.jpeg" alt="Graduation Procession">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">2nd 
-          Graduation Ceremony </span>
-          <p>Commissioning & Graduation Ceremony Photo 7</p>
+          <span class="gallery-cat-tag">Ceremony</span>
+          <p>Commemorative photo of the Graduation Procession</p>
         </div>
       </div>
 
-      <div class="gallery-item" data-category="graduates" onclick="openLightbox(this)">
-        <div class="gallery-img graduates3">
-         <img class="gallery-img-real" src="js/image/7.jpeg" alt="chairman">
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/9.jpeg" alt="2nd Graduation Ceremony">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-       
-          <span class="gallery-cat-tag">3nd Graduation Ceremony</span>
-          <p>Commissioning & Graduation Ceremony Photo 8</p>
+          <span class="gallery-cat-tag">Ceremony</span>
+          <p>Blessings from our 2nd Graduation Ceremony</p>
         </div>
       </div>
 
-      <div class="gallery-item" data-category="campus" onclick="openLightbox(this)">
-        <div class="gallery-img campus2">
-         <img class="gallery-img-real" src="js/image/14.jpeg" alt="chairman">
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/7.jpeg" alt="3rd Graduation Ceremony">
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Image 9</span>
-          <p>Commissioning & Graduation Ceremony Photo 9</p>
+          <span class="gallery-cat-tag">Ceremony</span>
+          <p>Joyous moments from our 3rd Graduation Ceremony</p>
         </div>
       </div>
 
-      <!-- 2 Video Placeholders -->
+      <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)">
+        <div class="gallery-img">
+          <img class="gallery-img-real" src="js/image/14.jpeg" alt="Graduation Highlights">
+          <div class="gallery-overlay"></div>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-cat-tag">Ceremony</span>
+          <p>Graduation Ceremony - A day of celebration and sending</p>
+        </div>
+      </div>
+
+      <!-- Videos -->
       <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)" data-video="true" data-src="js/vedios/vedio1.mp4">
         <div class="gallery-img ceremony">
+          <video class="gallery-video-preview" muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="js/vedios/vedio1.mp4" type="video/mp4">
+          </video>
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Video 1</span>
-          <p>Graduation Ceremony Highlights Video 1</p>
+          <span class="gallery-cat-tag">Video Highlight</span>
+          <p>Graduation Ceremony Video - Part 1</p>
         </div>
       </div>
 
       <div class="gallery-item" data-category="ceremony" onclick="openLightbox(this)" data-video="true" data-src="js/vedios/vedio2.mp4">
         <div class="gallery-img ceremony">
+          <video class="gallery-video-preview" muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="js/vedios/vedio2.mp4" type="video/mp4">
+          </video>
           <div class="gallery-overlay"></div>
         </div>
         <div class="gallery-caption">
-          <span class="gallery-cat-tag">Video 2</span>
-          <p>Graduation Ceremony Highlights Video 2</p>
+          <span class="gallery-cat-tag">Video Highlight</span>
+          <p>Graduation Ceremony Video - Part 2</p>
         </div>
       </div>
 
-
-    </div><!-- /gallery-grid -->
+    </div>
 
   </section>
 
@@ -558,9 +560,7 @@ const PAGES = {
       <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
       <button class="lightbox-prev" onclick="lightboxNav(-1)">&#8249;</button>
       <button class="lightbox-next" onclick="lightboxNav(1)">&#8250;</button>
-      <div class="lightbox-img-wrap" id="lightboxImgWrap">
-        <!-- image or placeholder shown here -->
-      </div>
+      <div class="lightbox-img-wrap" id="lightboxImgWrap"></div>
       <div class="lightbox-caption" id="lightboxCaption"></div>
     </div>
   </div>
