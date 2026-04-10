@@ -1,0 +1,16 @@
+{
+  "name": "ibc-website",
+  "version": "1.0.0",
+  "description": "India Bible College & Seminary Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "theology",
+    "bible",
+    "college"
+  ],
+  "author": "India Bible College",
+  "license": "ISC"
+}

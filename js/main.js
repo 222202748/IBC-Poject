@@ -235,22 +235,28 @@ document.addEventListener('click', function (e) {
 
 // ── INITIALIZATION ──
 document.addEventListener('DOMContentLoaded', () => {
+  const isLocalFile = window.location.protocol === 'file:';
+  
   // Check for legacy URL query parameters
   const urlParams = new URLSearchParams(window.location.search);
   const pageId = urlParams.get('page');
 
   if (pageId) {
-    // Convert query param to hash and clean URL using replaceState
-    // This avoids creating multiple entries in history
     const newHash = '#' + pageId;
-    window.history.replaceState(null, '', window.location.pathname + newHash);
+    if (isLocalFile) {
+      window.location.hash = newHash;
+    } else {
+      window.history.replaceState(null, '', window.location.pathname + newHash);
+    }
     handleRouting();
   } else if (!window.location.hash) {
-    // Default to home without creating extra history entry
-    window.history.replaceState(null, '', window.location.pathname + '#home');
+    if (isLocalFile) {
+      window.location.hash = '#home';
+    } else {
+      window.history.replaceState(null, '', window.location.pathname + '#home');
+    }
     handleRouting();
   } else {
-    // standard routing based on current hash
     handleRouting();
   }
 });

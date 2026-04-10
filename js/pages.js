@@ -533,7 +533,7 @@ const PAGES = {
         </div>
         <div class="gallery-caption">
           <span class="gallery-cat-tag">Video Highlight</span>
-          <p>Graduation Ceremony Video - Part 1</p>
+          <p>India Bible College Graduation Ceremony Video - Part 1</p>
         </div>
       </div>
 
@@ -546,7 +546,7 @@ const PAGES = {
         </div>
         <div class="gallery-caption">
           <span class="gallery-cat-tag">Video Highlight</span>
-          <p>Graduation Ceremony Video - Part 2</p>
+          <p>India Bible College Graduation Ceremony Video - Part 2</p>
         </div>
       </div>
 
